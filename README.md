@@ -6,6 +6,7 @@ It includes complete features for **Question Management, Quiz Creation**, and **
 - **Repository Layer** – JPA interaction with PostgreSQL
 - **Model Layer** – Entities and DTOs
 
+
 ## 📌 Features
 #### Question Module
 - Add, update, and delete questions
@@ -17,6 +18,7 @@ It includes complete features for **Question Management, Quiz Creation**, and **
 - Fetch quiz questions (without exposing correct answers)
 - Submit answers and calculate score
 
+
 ## 🧱 Architecture
 All components run inside a **single monolithic service**, sharing one database.
 Controllers → Services → Repositories → PostgreSQL.
@@ -27,6 +29,7 @@ This structure makes it easy later to break into separate services like:
 - Quiz Service
 - Result Service
 
+
 ## ▶ Running the Project
 
 1) Configure PostgreSQL in application.properties
@@ -34,6 +37,22 @@ This structure makes it easy later to break into separate services like:
 3) Access endpoints using Postman or browser
   - Example:
     - http://localhost:8080/question/getQuestions
+
+
+## 🔗 API Overview
+
+| Module   | Method | Endpoint | Description |
+|----------|--------|----------|-------------|
+| Question | GET    | `/question/getQuestions`            | Fetch all questions |
+| Question | GET    | `/question/getQuestions/{category}` | Fetch questions by category |
+| Question | POST   | `/question/addQuestion`             | Add a new question |
+| Question | PUT    | `/question/updateQuestion/{id}`     | Update a question by ID |
+| Question | DELETE | `/question/deleteQuestion/{id}`     | Delete question |
+| Quiz     | POST   | `/quiz/createQuiz`                  | Create quiz |
+| Quiz     | GET    | `/quiz/getQuizById/{id}`            | Get quiz questions |
+| Quiz     | POST   | `/quiz/submit/{id}`                 | Submit responses & get score |
+
+
 
 ## 🔗 Microservices Version Available
 A complete **microservice-based version** of this project is also created separately.
@@ -43,6 +62,7 @@ A complete **microservice-based version** of this project is also created separa
 https://github.com/Hardik-Girdhar/SpringBoot-product-crud-api.git
 
 You can explore that repo to see how the monolithic logic is split into independent microservices.
+
 
 ## 🛠 Tech Stack
 - Java 21

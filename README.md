@@ -31,7 +31,9 @@ This structure makes it easy later to break into separate services like:
 A complete microservice-based version of this project is also created separately.
 
 **👉 Microservices Repo:**
+
 https://github.com/Hardik-Girdhar/SpringBoot-product-crud-api.git
+
 You can explore that repo to see how the monolithic logic is split into independent microservices.
 
 ## 🛠 Tech Stack

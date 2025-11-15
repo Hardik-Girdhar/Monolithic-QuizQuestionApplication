@@ -32,8 +32,8 @@ This structure makes it easy later to break into separate services like:
 1) Configure PostgreSQL in application.properties
 2) Run the Spring Boot application
 3) Access endpoints using Postman or browser
-- Example:
-  - http://localhost:8080/question/getQuestions
+  - Example:
+    - http://localhost:8080/question/getQuestions
 
 ## 🔗 Microservices Version Available
 A complete **microservice-based version** of this project is also created separately.

@@ -1,24 +1,24 @@
 # Question Quiz Application (Monolithic)
-This project is a Spring Boot–based monolithic application for managing quiz questions and creating quizzes dynamically.
-It includes complete features for Question Management, Quiz Creation, and Quiz Submission/Result Calculation using a layered architecture:
+This project is a **Spring Boot–based monolithic application** for managing quiz questions and creating quizzes dynamically.
+It includes complete features for **Question Management, Quiz Creation**, and **Quiz Submission/Result Calculation** using a layered architecture:
 - **Controller Layer** – REST endpoints
 - **Service Layer** – Business logic
 - **Repository Layer** – JPA interaction with PostgreSQL
 - **Model Layer** – Entities and DTOs
 
 ## 📌 Features
-### Question Module
+#### Question Module
 - Add, update, and delete questions
 - Fetch all questions
 - Fetch questions by category (Param/Path)
 
-### Quiz Module
+#### Quiz Module
 - Create quizzes using random questions from a category
 - Fetch quiz questions (without exposing correct answers)
 - Submit answers and calculate score
 
 ## 🧱 Architecture
-All components run inside a single monolithic service, sharing one database.
+All components run inside a **single monolithic service**, sharing one database.
 Controllers → Services → Repositories → PostgreSQL.
 
 This structure makes it easy later to break into separate services like:
@@ -27,8 +27,16 @@ This structure makes it easy later to break into separate services like:
 - Quiz Service
 - Result Service
 
+## ▶ Running the Project
+
+1) Configure PostgreSQL in application.properties
+2) Run the Spring Boot application
+3) Access endpoints using Postman or browser
+- Example:
+  - http://localhost:8080/question/getQuestions
+
 ## 🔗 Microservices Version Available
-A complete microservice-based version of this project is also created separately.
+A complete **microservice-based version** of this project is also created separately.
 
 **👉 Microservices Repo:**
 

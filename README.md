@@ -59,7 +59,7 @@ A complete **microservice-based version** of this project is also created separa
 
 **👉 Microservices Repo:**
 
-https://github.com/Hardik-Girdhar/SpringBoot-product-crud-api.git
+https://github.com/Hardik-Girdhar/Microservice-QuizQuestionApplication.git
 
 You can explore that repo to see how the monolithic logic is split into independent microservices.
 

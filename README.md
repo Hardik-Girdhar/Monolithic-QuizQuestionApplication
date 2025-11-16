@@ -1,4 +1,4 @@
-# Question Quiz Application (Monolithic)
+# 📘 Monolithic-Based Quiz Application
 This project is a **Spring Boot–based monolithic application** for managing quiz questions and creating quizzes dynamically.
 It includes complete features for **Question Management, Quiz Creation**, and **Quiz Submission/Result Calculation** using a layered architecture:
 - **Controller Layer** – REST endpoints
